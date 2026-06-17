@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crème & Crumb Cake Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito+Sans:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Crème and Crumb home">
+      <span class="brand-mark">C&C</span>
+      <span>
+        <strong>Crème & Crumb</strong>
+        <small>Cake Studio</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primaryNav">
+      <span></span><span></span>
+      <span class="sr-only">Open menu</span>
+    </button>
+
+    <nav id="primaryNav" class="primary-nav" aria-label="Primary navigation">
+      <a href="#menu">Menu</a>
+      <a href="#features">Why us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section-pad">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Small-batch cakes, honest prices</p>
+        <h1>Fresh celebration cakes with a clean, modern taste.</h1>
+        <p class="hero-text">
+          A minimalist cake shop serving layered cakes, soft pastries, and custom treats made daily with premium ingredients and reasonable pricing.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">Explore menu</a>
+          <a class="btn btn-soft" href="#contact">Order support</a>
+        </div>
+      </div>
+
+      <div class="hero-card reveal delay-1" aria-label="Featured cake">
+        <div class="cake-plate">
+          <div class="cake-top"></div>
+          <div class="cake-body">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="cake-base"></div>
+        </div>
+        <div class="hero-note">
+          <span>Today’s special</span>
+          <strong>Honey Vanilla Berry Cake</strong>
+          <small>$28 - $44</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-strip reveal delay-2" aria-label="Shop details">
+      <article>
+        <span>Shop name</span>
+        <strong>Crème & Crumb Cake Studio</strong>
+      </article>
+      <article>
+        <span>Address</span>
+        <strong>24 Sugar Lane, Rosewood Market</strong>
+      </article>
+      <article>
+        <span>Support</span>
+        <strong>+1 (555) 014-2580</strong>
+      </article>
+    </section>
+
+    <section id="features" class="features section-pad">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Why it feels different</p>
+        <h2>Quality cake-shop craft without premium-shop pressure.</h2>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <span class="feature-icon">01</span>
+          <h3>Daily small batches</h3>
+          <p>Cakes and pastries are baked in measured batches, so the shelf stays fresh and waste stays low.</p>
+        </article>
+        <article class="feature-card reveal delay-1">
+          <span class="feature-icon">02</span>
+          <h3>Real ingredients</h3>
+          <p>Buttercream, fruit compotes, cocoa, vanilla, nuts, and cream are selected for taste first.</p>
+        </article>
+        <article class="feature-card reveal delay-2">
+          <span class="feature-icon">03</span>
+          <h3>Clear cost range</h3>
+          <p>Simple pricing bands help customers choose confidently before placing an order.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="menu" class="menu section-pad">
+      <div class="section-heading centered reveal">
+        <p class="eyebrow">Menu & products</p>
+        <h2>Clean flavors, colorful moments.</h2>
+        <p>Filter the menu to find cakes, pastries, or custom celebration options.</p>
+      </div>
+
+      <div class="filter-row reveal delay-1" role="list" aria-label="Menu filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="cakes">Cakes</button>
+        <button class="filter-btn" data-filter="pastries">Pastries</button>
+        <button class="filter-btn" data-filter="custom">Custom</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <article class="menu-card reveal" data-category="cakes">
+          <figure class="food-photo berry">
+            <svg viewBox="0 0 220 170" role="img" aria-label="Berry velvet cake illustration">
+              <rect x="32" y="70" width="156" height="70" rx="16"></rect>
+              <path d="M42 76h136v22H42z"></path>
+              <circle cx="78" cy="58" r="12"></circle>
+              <circle cx="112" cy="52" r="13"></circle>
+              <circle cx="145" cy="60" r="11"></circle>
+              <path d="M30 142h160" />
+            </svg>
+          </figure>
+          <div>
+            <span class="tag">Best seller</span>
+            <h3>Berry Velvet Slice</h3>
+            <p>Soft red velvet, berry cream, and light vanilla frosting.</p>
+            <strong>$5 - $9</strong>
+          </div>
+        </article>
+
+        <article class="menu-card reveal delay-1" data-category="cakes">
+          <figure class="food-photo choco">
+            <svg viewBox="0 0 220 170" role="img" aria-label="Chocolate gateau illustration">
+              <path d="M40 128c12-42 38-72 72-72s61 30 72 72H40z"></path>
+              <path d="M56 122h112"></path>
+              <circle cx="92" cy="75" r="8"></circle>
+              <circle cx="124" cy="67" r="7"></circle>
+              <circle cx="146" cy="84" r="6"></circle>
+            </svg>
+          </figure>
+          <div>
+            <span class="tag">Rich cocoa</span>
+            <h3>Belgian Chocolate Gateau</h3>
+            <p>Deep cocoa sponge with whipped ganache and crisp pearls.</p>
+            <strong>$22 - $38</strong>
+          </div>
+        </article>
+
+        <article class="menu-card reveal delay-2" data-category="cakes">
+          <figure class="food-photo pista">
+            <svg viewBox="0 0 220 170" role="img" aria-label="Pistachio rose cake illustration">
+              <rect x="55" y="48" width="110" height="94" rx="26"></rect>
+              <path d="M64 78h92M64 108h92"></path>
+              <path d="M85 40c16 18 34 18 50 0"></path>
+              <circle cx="152" cy="51" r="9"></circle>
+            </svg>
+          </figure>
+          <div>
+            <span class="tag">Signature</span>
+            <h3>Pistachio Rose Mini Cake</h3>
+            <p>Nutty sponge, rose milk cream, and crushed pistachio.</p>
+            <strong>$14 - $24</strong>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-category="pastries">
+          <figure class="food-photo tart">
+            <svg viewBox="0 0 220 170" role="img" aria-label="Strawberry tart illustration">
+              <ellipse cx="110" cy="115" rx="75" ry="28"></ellipse>
+              <path d="M42 111c16-44 120-44 136 0"></path>
+              <circle cx="82" cy="92" r="13"></circle>
+              <circle cx="114" cy="86" r="14"></circle>
+              <circle cx="146" cy="94" r="12"></circle>
+            </svg>
+          </figure>
+          <div>
+            <span class="tag">Fresh fruit</span>
+            <h3>Strawberry Cream Tart</h3>
+            <p>Buttery shell, custard cream, and glazed strawberries.</p>
+            <strong>$6 - $11</strong>
+          </div>
+        </article>
+
+        <article class="menu-card reveal delay-1" data-category="pastries">
+          <figure class="food-photo lemon">
+            <svg viewBox="0 0 220 170" role="img" aria-label="Lemon pastry illustration">
+              <path d="M48 118c8-36 31-58 62-58s54 22 62 58H48z"></path>
+              <path d="M61 111h98"></path>
+              <path d="M92 53c9-16 31-16 40 0"></path>
+              <circle cx="145" cy="70" r="9"></circle>
+            </svg>
+          </figure>
+          <div>
+            <span class="tag">Bright</span>
+            <h3>Lemon Cloud Pastry</h3>
+            <p>Flaky pastry with lemon cream and a soft sugar finish.</p>
+            <strong>$4 - $8</strong>
+          </div>
+        </article>
+
+        <article class="menu-card reveal delay-2" data-category="custom">
+          <figure class="food-photo custom">
+            <svg viewBox="0 0 220 170" role="img" aria-label="Custom celebration cake illustration">
+              <rect x="50" y="82" width="120" height="58" rx="14"></rect>
+              <rect x="70" y="52" width="80" height="42" rx="13"></rect>
+              <path d="M92 52V34M112 52V34M132 52V34"></path>
+              <path d="M86 106h48"></path>
+            </svg>
+          </figure>
+          <div>
+            <span class="tag">Pre-order</span>
+            <h3>Custom Celebration Cake</h3>
+            <p>Personalized flavor, color palette, note, and serving size.</p>
+            <strong>$32 - $85</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="price-band section-pad reveal">
+      <div>
+        <p class="eyebrow">Cost range</p>
+        <h2>Reasonable prices, clear portions.</h2>
+      </div>
+      <div class="price-list">
+        <span>Single pastries <strong>$4-$11</strong></span>
+        <span>Mini cakes <strong>$14-$24</strong></span>
+        <span>Full cakes <strong>$22-$44</strong></span>
+        <span>Custom orders <strong>$32-$85</strong></span>
+      </div>
+    </section>
+
+    <section id="reviews" class="reviews section-pad">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Customer notes</p>
+        <h2>Existing reviews</h2>
+      </div>
+
+      <div class="reviews-layout">
+        <div class="review-list" id="reviewList" aria-live="polite"></div>
+
+        <form class="review-form reveal delay-1" id="reviewForm">
+          <h3>Leave a review</h3>
+          <label>
+            Name
+            <input type="text" id="reviewName" placeholder="Your name" required />
+          </label>
+          <label>
+            Review
+            <textarea id="reviewText" rows="4" placeholder="Tell us what you enjoyed..." required></textarea>
+          </label>
+          <label>
+            Rating
+            <select id="reviewRating">
+              <option value="5">5 stars</option>
+              <option value="4">4 stars</option>
+              <option value="3">3 stars</option>
+            </select>
+          </label>
+          <button class="btn btn-primary" type="submit">Add review</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-pad">
+      <div class="contact-card reveal">
+        <p class="eyebrow">Contact support</p>
+        <h2>Order help, custom cake guidance, and pickup support.</h2>
+        <div class="contact-grid">
+          <p><span>Address</span>24 Sugar Lane, Rosewood Market, Springfield</p>
+          <p><span>Phone</span>+1 (555) 014-2580</p>
+          <p><span>Email</span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="11626461617e6365517263747c74707f757263647c733f7469707c617d74">[email&#160;protected]</a></p>
+          <p><span>Hours</span>Tue-Sun, 8:00 AM - 8:00 PM</p>
+        </div>
+      </div>
+      <aside class="promise-card reveal delay-1">
+        <strong>Our promise</strong>
+        <p>Premium bakery feel, transparent pricing, soft textures, and careful packaging for every order.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Crème & Crumb Cake Studio. Fresh cakes, fair prices.</p>
+    <a href="#home">Back to top</a>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+</body>
+</html>
